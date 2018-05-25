@@ -18,22 +18,27 @@ Se dese construir un proyecto en el cual se puedan utilizar AWS Rekognition para
 ## Configuración de ambiente
 
 __Insatalar Python__
-    $ sudo add-apt-repository ppa:deadsnakes/ppa
-    $ sudo apt-get update
-    $ sudo apt-get install python3.6
+
+  $ sudo add-apt-repository ppa:deadsnakes/ppa
+  $ sudo apt-get update
+  $ sudo apt-get install python3.6
 
 __Instalar Pip__
-    $ sudo apt-get update && sudo apt-get -y upgrade
-    $ sudo apt-get install python-pip
-    $ pip -v
+
+  $ sudo apt-get update && sudo apt-get -y upgrade
+  $ sudo apt-get install python-pip
+  $ pip -v
 
 __Descargar e instalar cliente de AWS__
-    $ sudo pip install awsebcli
+
+  $ sudo pip install awsebcli
 
 __Descargar e instalar boto3__
-    $ sudo pip install boto3
+
+  $ sudo pip install boto3
 
 __Configurar llaves de acceso__
+
 Se debe crear una la carpeta `./aws` en el direcotrio __home__, dentro de la carpeta se debe crear un archivo llamado `credentials` sin extensión. Dentro copiar el sigueinte codigo:
 
 ```java
