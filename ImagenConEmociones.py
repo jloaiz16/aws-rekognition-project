@@ -1,10 +1,12 @@
 import boto3
+import os
 import json
 from PIL import Image
 
 if __name__ == "__main__":
     s3 = boto3.resource('s3')
     client = boto3.client('rekognition', 'us-east-1')
+    KEY = os.urandom(32)
     fileName = 'images1.jpeg'
     bucketin = 'camiloin'
     bucketout = 'camiloout'   
@@ -56,4 +58,13 @@ if __name__ == "__main__":
 
         im.paste(imemo, (int(x1), int(y1)), imemo)
     im.save("images1-emo.jpeg", "JPEG")
+    print("Uploading S3 object with SSE-C")
+    s3 = boto3.client('s3')
+    s3.put_object(Bucket=bucketout,
+              Key=fileName,
+              Body=b'foobar',
+              SSECustomerKey=KEY,
+              SSECustomerAlgorithm='AES256')
+    print("Done")
+
 im.show()
