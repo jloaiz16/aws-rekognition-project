@@ -15,6 +15,8 @@ Se dese construir un proyecto en el cual se puedan utilizar AWS Rekognition para
 
 * __AWS S3:__ Servicio de AWS para el almacenamiento en la nube, además de ofrecer la capacidad para recopilar, almacenar y analizar datos de manera simple, segura y a gran escala.
 
+* __Open CV:__ Es una librería software open-source de visión artificial y machine learning. OpenCV provee una infraestructura para aplicaciones de visión artificial. Se usa en aplicaciones como la detección de intrusos en vídeos, monitorización de equipamientos, ayuda a navegación de robots, inspeccionar etiquetas en productos, etc.
+
 ## Configuración de ambiente
 
 __Insatalar Python__
@@ -47,3 +49,7 @@ Se debe crear una la carpeta `./aws` en el direcotrio __home__, dentro de la car
   aws_secret_access_key = YOUR_SECRET_ACCESS_KEY
 ```
  
+ ## URL's de referencia
+
+ Open CV Tutorial: https://docs.opencv.org/3.1.0/d7/d8b/tutorial_py_face_detection.html
+ AWS Rekognition Tutorial: https://docs.aws.amazon.com/rekognition/latest/dg/API_Video.html
