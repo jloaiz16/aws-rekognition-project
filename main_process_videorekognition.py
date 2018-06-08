@@ -26,6 +26,8 @@ if __name__ == '__main__' :
 				#rekognition_video.getvideodetails()
 			elif option == 2 :
 				file_im = raw_input("Ingrese nombre de imagen de persona a verificar: ")
+				im_name = raw_input("Ingrese nombre de la persona")
+				rekognition_video.build_reckognition(file_vd, im_name)
 				#rekognition_video.verifyperson()
 			else :
 				print("Opcion incorrecta")
