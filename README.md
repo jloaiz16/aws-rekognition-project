@@ -21,23 +21,23 @@ Se dese construir un proyecto en el cual se puedan utilizar AWS Rekognition para
 
 __Insatalar Python__
 
-  $ sudo add-apt-repository ppa:deadsnakes/ppa
-  $ sudo apt-get update
-  $ sudo apt-get install python3.6
+* $ sudo add-apt-repository ppa:deadsnakes/ppa
+* $ sudo apt-get update
+* $ sudo apt-get install python3.6
 
 __Instalar Pip__
 
-  $ sudo apt-get update && sudo apt-get -y upgrade
-  $ sudo apt-get install python-pip
-  $ pip -v
+* $ sudo apt-get update && sudo apt-get -y upgrade
+* $ sudo apt-get install python-pip
+* $ pip -v
 
 __Descargar e instalar cliente de AWS__
 
-  $ sudo pip install awsebcli
+* $ sudo pip install awsebcli
 
 __Descargar e instalar boto3__
 
-  $ sudo pip install boto3
+* $ sudo pip install boto3
 
 __Configurar llaves de acceso__
 
@@ -49,7 +49,13 @@ Se debe crear una la carpeta `./aws` en el direcotrio __home__, dentro de la car
   aws_secret_access_key = YOUR_SECRET_ACCESS_KEY
 ```
  
+ __Instalar OpenCV__
+ * $ sudo apt-get install libopencv-dev python-opencv
+
+ ## Correr el programa
+ * $ python2.7 main_process_videorekognition.py
+  
  ## URL's de referencia
 
- Open CV Tutorial: https://docs.opencv.org/3.1.0/d7/d8b/tutorial_py_face_detection.html
- AWS Rekognition Tutorial: https://docs.aws.amazon.com/rekognition/latest/dg/API_Video.html
+ * Open CV Tutorial: https://docs.opencv.org/3.1.0/d7/d8b/tutorial_py_face_detection.html
+ * AWS Rekognition Tutorial: https://docs.aws.amazon.com/rekognition/latest/dg/API_Video.html

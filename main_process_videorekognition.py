@@ -22,8 +22,7 @@ if __name__ == '__main__' :
 			option = input()
 
 			if option == 1 :
-				print("sd")
-				#rekognition_video.getvideodetails()
+				rekognition_video.getvideodetails(file_vd)
 			elif option == 2 :
 				file_im = raw_input("Ingrese nombre de imagen de persona a verificar: ")
 				im_name = raw_input("Ingrese nombre de la persona")

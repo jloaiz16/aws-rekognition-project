@@ -12,7 +12,8 @@ def getvideorekognition():
 
     if option == 1:
         file_im = raw_input("Ingrese nombre de imagen de persona a verificar: ")
-
+        name = raw_input("Ingrese nombre de la persona")
+        
         client=boto3.client('rekognition')
 
         cap = cv2.VideoCapture(0)
@@ -28,7 +29,7 @@ def getvideorekognition():
             #                                  TargetImage={'Bytes': image})
             #    print(response)
             
-            name = raw_input("Ingrese nombre de la persona")
+
 
             for (x,y,w,h) in faces:
                 cv2.rectangle(img,(x,y),(x+w,y+h),(255,0,0),2)
